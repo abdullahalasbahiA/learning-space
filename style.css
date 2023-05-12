@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: poppins, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for form container */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+    font-family: Arial, sans-serif;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    height: auto;
+}
+
+/* Style for form labels */
+label {
+    margin-bottom: 10px;
+}
+
+/* Style for form input fields */
+input[type=text],
+input[type=email],
+input[type=password] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style for form submit button */
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Style for form submit button on hover */
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style for form error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+/* Style for login form container */
+.login-form {
+    margin-right: 50px;
+}
+
+/* Style for signup form container */
+.signup-form {
+    margin-left: 50px;
+}
+
+/* Style for form container in a row */
+.forms-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ============= HEADER AND NAVBAR STYING ============= */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+
+/* Header style */
+header {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+/* Navigation style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+/* Logo style */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-right: 50px;
+}
+
+/* Navigation links style */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Navigation link style */
+li {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+a:hover {
+    background-color: #f1f1f1;
+}
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* =================== Quiz Styling  ===================*/
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+
+/* Quiz container style */
+.quiz-container {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Quiz item style */
+.quiz-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Quiz item image style */
+img {
+    max-width: 100px;
+
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* Quiz item title style */
+h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .quiz-item {
+        flex-direction: column;
+    }
+
+    img {
+        margin-right: 0;
+    }
+}
+
+
+
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: poppins, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Style for form container */
+form.quiz-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    font-family: Arial, sans-serif;
+    border: 1px solid black;
+    padding: 1px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+}
+
+/* Style for form labels */
+label {
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+/* Style for form input fields */
+input[type=text],
+input[type=email],
+input[type=password] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Style for form submit button */
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Style for form submit button on hover */
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style for form error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ============= HEADER AND NAVBAR STYING ============= */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+
+/* Header style */
+header {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* Navigation style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+/* Logo style */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-right: 50px;
+}
+
+/* Navigation links style */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Navigation link style */
+li {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+a:hover {
+    background-color: #f1f1f1;
+}
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* =================== Quiz Styling  ===================*/
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+
+/* Quiz container style */
+.quiz-container {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Quiz item style */
+.quiz-item {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Quiz item image style */
+img {
+    max-width: 100px;
+
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* Quiz item title style */
+h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .quiz-item {
+        flex-direction: column;
+    }
+
+    img {
+        margin-right: 0;
+    }
+}
+
+
+.answers{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    float: left;
+    background-color: black;
+    color: white;
+}
+
+
+.center-text {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.question-correct {
+    background-color: #c8e6c9;
+}
+
+.question-incorrect {
+    background-color: #ffcdd2;
+}
+
+.answer-correct {
+    color: green;
+}
+
+.answer-incorrect {
+    color: red;
+}
+
+.question-feedback {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.correct-feedback {
+    color: green;
+}
+
+.incorrect-feedback {
+    color: red;
+}
